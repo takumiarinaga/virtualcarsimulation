@@ -188,7 +188,8 @@ namespace SegmentInserter
 			DateTime dtBirth = DateTime.Now;
 
 			System.IO.StreamWriter sw = new System.IO.StreamWriter(
-					@"C:\Users\arinaga\Desktop"+dtBirth.ToString("yyyyMMddHHmmss"),
+					//@"C:\Users\arinaga\Desktop\" + dtBirth.ToString("yyyyMMddHHmmss")+"UnsentGPS"+".csv",
+					@"\\itsserver\ECOLOG_LogData_itsserver\Arisimu\LEAFSIMU\arisimu\DrivingLoggerUnsentLog\" + dtBirth.ToString("yyyyMMddHHmmss") + "UnsentGPS" + ".csv",
 					false,
 					System.Text.Encoding.GetEncoding("shift_jis"));
 			for (index = 0; index < datacount; index++) {

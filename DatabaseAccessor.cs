@@ -103,7 +103,55 @@ namespace SegmentInserter
 
             return dt;
         }
-        public static void InsertSegment(List<SegmentData> result)
+
+
+		#region 新規DBアクセス
+
+		public static DataTable LinkTableGetter3(int id)
+		{
+
+			string cn = @"Data Source=ECOLOGDB2016;Initial Catalog=ECOLOGDBver3;Integrated Security=True";//接続DB
+
+
+			DataTable dt = new DataTable();
+
+
+
+			string query = "LINK_test";//クエリ記入
+
+			using (SqlConnection SQLConn = new SqlConnection(cn))
+			{
+				SQLConn.FireInfoMessageEventOnUserErrors = false;
+
+				SqlDataAdapter da = new SqlDataAdapter(query, cn);
+
+				//DBからデータを取得しDataTableへ格納
+				try
+				{
+					SQLConn.Open();
+					SqlCommand cmd = new SqlCommand(query, SQLConn);
+					// cmd.CommandTimeout = 600;
+					da.SelectCommand = cmd;
+					da.Fill(dt);
+				}
+				catch (Exception e)
+				{
+					Console.Write("Inner exception: {0}", e.Message);
+				}
+				finally
+				{
+					SQLConn.Close();
+
+				}
+			}
+
+			return dt;
+		}
+
+		#endregion
+
+
+		public static void InsertSegment(List<SegmentData> result)
         {
 
             string cn = @"Data Source=ECOLOGDB2016;Initial Catalog=ECOLOGDBver4;Integrated Security=True";//接続DB

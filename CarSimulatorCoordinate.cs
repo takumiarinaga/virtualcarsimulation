@@ -57,8 +57,9 @@ namespace SegmentInserter
 			//endNum = 894847;//通勤セマンティックリンクのエンド地点指定
 			#endregion
 
-			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id);//セマンティックリンクIDからセマンティックリンクデータを取得
+			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id);//セマンティックリンクIDからセマンティックリンクデータを取得
 
+			DataTable LinkTable = DatabaseAccessor.LinkTableGetter3(id);
 			DataRow[] LinkRows = LinkTable.Select(null, "DISTANCE");//LinkTableをカラムDISTANCEでソートしてDataRow配列に変換
 			DataRow[] StartLink = LinkTable.Select("NUM = " + startNum);//通勤セマンティックリンクのスタート地点のリンク構成点データだけ取り出し
 			List<LinkData> linkList = new List<LinkData>();//リンクデータリスト追加

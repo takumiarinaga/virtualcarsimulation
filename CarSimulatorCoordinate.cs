@@ -41,14 +41,14 @@ namespace SegmentInserter
 			//tripid = Convert.ToInt32(textBox4.Text);
 			//NumofCar = Convert.ToInt32(textBox5.Text);
 
-			id = 298;
+			//id = 298;
 			//tripid = 11;
 			NumofCar = 100;
 
 
 			int startNum = 0;
 			int endNum = 0;
-
+			id = Convert.ToInt32(textBox10.Text);
 			startNum = Convert.ToInt32(textBox2.Text);
 			endNum = Convert.ToInt32(textBox3.Text);
 
@@ -625,6 +625,11 @@ namespace SegmentInserter
 		}
 
 		private void SegmentInserter_Load(object sender, EventArgs e)
+		{
+
+		}
+
+		private void label4_Click(object sender, EventArgs e)
 		{
 
 		}

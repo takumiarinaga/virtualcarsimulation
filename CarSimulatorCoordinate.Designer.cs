@@ -39,6 +39,8 @@ namespace SegmentInserter
 			this.label2 = new System.Windows.Forms.Label();
 			this.textBox4 = new System.Windows.Forms.TextBox();
 			this.label3 = new System.Windows.Forms.Label();
+			this.textBox10 = new System.Windows.Forms.TextBox();
+			this.label4 = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// button1
@@ -131,11 +133,32 @@ namespace SegmentInserter
 			this.label3.Size = new System.Drawing.Size(0, 21);
 			this.label3.TabIndex = 12;
 			// 
+			// textBox10
+			// 
+			this.textBox10.Location = new System.Drawing.Point(262, 62);
+			this.textBox10.Name = "textBox10";
+			this.textBox10.Size = new System.Drawing.Size(115, 28);
+			this.textBox10.TabIndex = 13;
+			// 
+			// label4
+			// 
+			this.label4.AutoSize = true;
+			this.label4.Font = new System.Drawing.Font("MS UI Gothic", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(128)));
+			this.label4.Location = new System.Drawing.Point(108, 65);
+			this.label4.Margin = new System.Windows.Forms.Padding(6, 0, 6, 0);
+			this.label4.Name = "label4";
+			this.label4.Size = new System.Drawing.Size(78, 21);
+			this.label4.TabIndex = 14;
+			this.label4.Text = "TRIP_ID";
+			this.label4.Click += new System.EventHandler(this.label4_Click);
+			// 
 			// SegmentInserter
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 21F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(457, 454);
+			this.Controls.Add(this.label4);
+			this.Controls.Add(this.textBox10);
 			this.Controls.Add(this.label3);
 			this.Controls.Add(this.textBox4);
 			this.Controls.Add(this.label2);
@@ -176,6 +199,8 @@ namespace SegmentInserter
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox4;
 		private System.Windows.Forms.Label label3;
+		private System.Windows.Forms.TextBox textBox10;
+		private System.Windows.Forms.Label label4;
 	}
 }
 

@@ -59,7 +59,7 @@ namespace SegmentInserter
 
 			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id);//セマンティックリンクIDからセマンティックリンクデータを取得
 
-			DataTable LinkTable = DatabaseAccessor.LinkTableGetter3(id);
+			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id);
 			DataRow[] LinkRows = LinkTable.Select(null, "DISTANCE");//LinkTableをカラムDISTANCEでソートしてDataRow配列に変換
 			DataRow[] StartLink = LinkTable.Select("NUM = " + startNum);//通勤セマンティックリンクのスタート地点のリンク構成点データだけ取り出し
 			List<LinkData> linkList = new List<LinkData>();//リンクデータリスト追加

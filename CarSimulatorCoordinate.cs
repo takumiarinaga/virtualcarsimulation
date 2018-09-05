@@ -22,7 +22,6 @@ namespace SegmentInserter
 		//StartInsertボタンをクリックすると開始
 		private void button1_Click(object sender, EventArgs e)
 		{
-			Console.WriteLine("ばかやろう");
 			#region 初期化
 			List<SegmentData> resultSegment = new List<SegmentData>();
 			List<LinkListData> resultLinkList = new List<LinkListData>();
@@ -31,40 +30,95 @@ namespace SegmentInserter
 			List<VirtualCarPositionData> resultCarPositionData = new List<VirtualCarPositionData>();
 
 
-			int id = 0; //通勤ルートのセマンティックリンクID
-			int tripid = 0;
-			int NumofCar = 0;//シミュレーションで生成する車の数
-			int carspeed = 60;//車の速度
+			string id1 = "0";
+			string id2 = "0";
+			string id3 = "0";
+			string id4 = "0";
+			string id5 = "0";
+			string id6 = "0";
+			string id7 = "0";
+			string id8 = "0";
+			string id9 = "0";
+			string id10 = "0";
+			string id11= "0";
+			string id12= "0";
+			string id13= "0";
+			string id14= "0";
+			string id15= "0";
+			string id16= "0";
+			string id17= "0";
+			string id18= "0";
+			string id19 = "0";
+			string id20 = "0";
+			string id21 = "0";
+			string id22 = "0";
+			string id23 = "0";
+			string id24 = "0";
+			string id25 = "0";
+			string id26 = "0";
+			//通勤ルートのセマンティックリンクID
+			//int tripid = 0;
+			//int NumofCar = 0;//シミュレーションで生成する車の数
+			//int carspeed = 60;//車の速度
 
 			//フォームのテキストボックスからIDなどを取得
 			//id = Convert.ToInt32(textBox1.Text);
 			//tripid = Convert.ToInt32(textBox4.Text);
 			//NumofCar = Convert.ToInt32(textBox5.Text);
 
-			//id = 298;
+			id1 = "RB140900749198";
+			id2 = "RB140900749199";
+			id3 = "RB140900749367";
+			id4 = "RB140900749200";
+			id5 = "RB140900749201";
+			id6 = "RB140900749364";
+			id7 = "RB140900749095";
+			id8 = "RB140900749096";
+			id9 = "RB140900749203";
+			id10 = "RB140900749204";
+			id11 = "RB140900749205";
+			id12 = "RB140900748973";
+			id13 = "RB140900748995";
+			id14 = "RB140900673052";
+			id15 = "RB140900683088";
+			id16 = "RB140900683087";
+			id17 = "RB140900683095";
+			id18 = "RB140900673069";
+			id19 = "RB140900562028";
+			id20 = "RB140900562037";
+			id21 = "RB140900557235";
+			id22 = "RB140900557239";
+			id23 = "RB140900557068";
+			id24 = "RB140900557067";
+			id25 = "RB140900557248";
+			id26 = "RB140900557246";
+
 			//tripid = 11;
-			NumofCar = 100;
+			//NumofCar = 100;
 
 
 			int startNum = 0;
 			int endNum = 0;
-			id = Convert.ToInt32(textBox10.Text);
-			startNum = Convert.ToInt32(textBox2.Text);
-			endNum = Convert.ToInt32(textBox3.Text);
+			//id = Convert.ToString(textBox10.Text);
+			//startNum = Convert.ToInt32(textBox2.Text);
+			//endNum = Convert.ToInt32(textBox3.Text);
 
 
-			//startNum = 45668;//通勤セマンティックリンクのスタート地点指定
-			//endNum = 894847;//通勤セマンティックリンクのエンド地点指定
+			startNum = 868676;//通勤セマンティックリンクのスタート地点指定
+			endNum = 196284;//通勤セマンティックリンクのエンド地点指定
 			#endregion
 
-			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id);//セマンティックリンクIDからセマンティックリンクデータを取得
+			//int geti = 0;
 
-			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id);
+			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id);//セマンティックリンクIDからセマンティックリンクデータを取得
+			
+			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2,id3,id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25,id26);
+			
 			DataRow[] LinkRows = LinkTable.Select(null, "DISTANCE");//LinkTableをカラムDISTANCEでソートしてDataRow配列に変換
-			DataRow[] StartLink = LinkTable.Select("NUM = " + startNum);//通勤セマンティックリンクのスタート地点のリンク構成点データだけ取り出し
+			DataRow[] StartLink = LinkTable.Select("START_NUM = " + startNum);//通勤セマンティックリンクのスタート地点のリンク構成点データだけ取り出し
 			List<LinkData> linkList = new List<LinkData>();//リンクデータリスト追加
 
-			linkList.Add(new LinkData(Convert.ToString(StartLink[0]["LINK_ID"]), Convert.ToInt32(StartLink[0]["NUM"]),
+			linkList.Add(new LinkData(Convert.ToString(StartLink[0]["LINK_ID"]), Convert.ToInt32(StartLink[0]["START_NUM"]),
 				Convert.ToDouble(StartLink[0]["START_LAT"]), Convert.ToDouble(StartLink[0]["START_LONG"]),
 				Convert.ToDouble(StartLink[0]["END_LAT"]), Convert.ToDouble(StartLink[0]["END_LONG"]), Convert.ToDouble(StartLink[0]["DISTANCE"])));//スタート地点のリンク構成点データをadd
 
@@ -81,7 +135,7 @@ namespace SegmentInserter
 					{
 
 
-						linkList.Add(new LinkData(Convert.ToString(LinkRows[i]["LINK_ID"]), Convert.ToInt32(LinkRows[i]["NUM"]),
+						linkList.Add(new LinkData(Convert.ToString(LinkRows[i]["LINK_ID"]), Convert.ToInt32(LinkRows[i]["START_NUM"]),
 													  Convert.ToDouble(LinkRows[i]["START_LAT"]), Convert.ToDouble(LinkRows[i]["START_LONG"]),
 													  Convert.ToDouble(LinkRows[i]["END_LAT"]), Convert.ToDouble(LinkRows[i]["END_LONG"]), Convert.ToDouble(LinkRows[i]["DISTANCE"])));//該当LinkをLinklistに追加
 						j++;//linkListにデータが追加されたので最後尾をUpdate
@@ -442,7 +496,8 @@ namespace SegmentInserter
 		{
 			List<VirtualCarPositionData> result = new List<VirtualCarPositionData>();
 			VirtualCarPositionData virtualCarPositionData;
-			double v3 = Convert.ToInt32(textBox4.Text);
+			//double v3 = Convert.ToInt32(textBox4.Text);
+			double v3 = 50;
 			double v = 0;
 			v = v3 * 1000 / 3600;
 			double past = 0;
@@ -541,26 +596,30 @@ namespace SegmentInserter
 					restv = v - rest;
 					restcount++;
 
-					while (restv > linkList[restcount].DISTANCE)
-					{
-						restv = restv - linkList[restcount].DISTANCE;
-						restcount++;
-						
-					}
 
-					lat1 = (((linkList[restcount].END_LAT - linkList[restcount].START_LAT) * restv / linkList[restcount].DISTANCE) + linkList[restcount].START_LAT);
-					long1 = (((linkList[restcount].END_LONG - linkList[restcount].START_LONG) * restv / linkList[restcount].DISTANCE) + linkList[restcount].START_LONG);
-					num = linkList[restcount].NUM;
-					past =  restv;
+					
 
+						while (restv > linkList[restcount].DISTANCE)
+						{
+							
+							restv = restv - linkList[restcount].DISTANCE;
+							restcount++;
 
+						}
 
-					virtualCarPositionData = new VirtualCarPositionData(lat1, long1, num);
-					result.Add(virtualCarPositionData);
-
-					posicount++;
+						lat1 = (((linkList[restcount].END_LAT - linkList[restcount].START_LAT) * restv / linkList[restcount].DISTANCE) + linkList[restcount].START_LAT);
+						long1 = (((linkList[restcount].END_LONG - linkList[restcount].START_LONG) * restv / linkList[restcount].DISTANCE) + linkList[restcount].START_LONG);
+						num = linkList[restcount].NUM;
+						past = restv;
 
 
+
+						virtualCarPositionData = new VirtualCarPositionData(lat1, long1, num);
+						result.Add(virtualCarPositionData);
+
+						posicount++;
+
+					
 				}
 			}
 			

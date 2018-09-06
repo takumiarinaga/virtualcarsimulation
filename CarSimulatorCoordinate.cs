@@ -140,7 +140,8 @@ namespace SegmentInserter
 
 
 			//outward用DB
-			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2,id3,id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25,id26);
+			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2,id3,id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25,id26);
+			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3);
 
 
 			//homeward横浜新道

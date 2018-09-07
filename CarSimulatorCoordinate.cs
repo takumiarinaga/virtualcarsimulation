@@ -445,7 +445,7 @@ namespace SegmentInserter
 		{
 			List<CarPositionData> result = new List<CarPositionData>();
 			//  double v_distance = Convert.ToInt32(textBox6.Text);         //車速
-			double v_distance = 50 / 3;   //1秒おきに
+			double v_distance = 75 / 3.6;   //1秒おきに
 
 			for (int i = 0; i < realcarposi.Count; i++)
 			{

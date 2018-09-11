@@ -96,32 +96,32 @@ namespace SegmentInserter
 
 
 			//homeward全部
-			id1 = "RB140900557239";
-			id2 = "RB140900557235";
-			id3 = "RB140900562037";
-			id4 = "RB140900562028";
-			id5 = "RB140900673069";
-			id6 = "RB140900683095";
-			id7 = "RB140900683094";
-			id8 = "RB140900683097";
-			id9 = "RB140900683749";
-			id10 = "RB140900683080";
-			id11 = "RB140900683081";
-			id12 = "RB140900683191";
-			id13 = "RB140900673048";
-			id14 = "RB140900748991";
-			id15 = "RB140900748992";
-			id16 = "RB140900748997";
-			id17 = "RB140900749001";
-			id18 = "RB140900735341";
-			id19 = "RB140900735342";
-			id20 = "RB140900520255";
-			id21 = "RB140900520239";
-			id22 = "RB140900520073";
-			id23 = "RB140900517833";
-			id24 = "RB140900517636";
-			id25 = "RB140900517624";
-			id26 = "RB140900510309";
+			//id1 = "RB140900557239";
+			//id2 = "RB140900557235";
+			//id3 = "RB140900562037";
+			//id4 = "RB140900562028";
+			//id5 = "RB140900673069";
+			//id6 = "RB140900683095";
+			//id7 = "RB140900683094";
+			//id8 = "RB140900683097";
+			//id9 = "RB140900683749";
+			//id10 = "RB140900683080";
+			//id11 = "RB140900683081";
+			//id12 = "RB140900683191";
+			//id13 = "RB140900673048";
+			//id14 = "RB140900748991";
+			//id15 = "RB140900748992";
+			//id16 = "RB140900748997";
+			//id17 = "RB140900749001";
+			//id18 = "RB140900735341";
+			//id19 = "RB140900735342";
+			//id20 = "RB140900520255";
+			//id21 = "RB140900520239";
+			//id22 = "RB140900520073";
+			//id23 = "RB140900517833";
+			//id24 = "RB140900517636";
+			//id25 = "RB140900517624";
+			//id26 = "RB140900510309";
 
 			//homeward横浜新道
 			//id1 = "RB140900557239";
@@ -134,16 +134,16 @@ namespace SegmentInserter
 			//id8 = "RB140900683097";
 
 			//homeward保土ヶ谷BP
-			//id1 = "RB140900749001";
-			//id2 = "RB140900735341";
-			//id3 = "RB140900735342";
-			//id4 = "RB140900520255";
-			//id5 = "RB140900520239";
-			//id6 = "RB140900520073";
-			//id7 = "RB140900517833";
-			//id8 = "RB140900517636";
-			//id9 = "RB140900517624";
-			//id10 = "RB140900510309";
+			id1 = "RB140900749001";
+			id2 = "RB140900735341";
+			id3 = "RB140900735342";
+			id4 = "RB140900520255";
+			id5 = "RB140900520239";
+			id6 = "RB140900520073";
+			id7 = "RB140900517833";
+			id8 = "RB140900517636";
+			id9 = "RB140900517624";
+			id10 = "RB140900510309";
 
 
 
@@ -163,8 +163,8 @@ namespace SegmentInserter
 
 
 			//homeward全部
-			startNum = 196228;//通勤セマンティックリンクのスタート地点指定
-			endNum = 40254;//通勤セマンティックリンクのエンド地点指定
+			//startNum = 196228;//通勤セマンティックリンクのスタート地点指定
+			//endNum = 40254;//通勤セマンティックリンクのエンド地点指定
 
 
 			////homeward横浜新道のみ
@@ -174,8 +174,8 @@ namespace SegmentInserter
 
 
 			////homeward保土ヶ谷BPのみ
-			//startNum = 867754;//通勤セマンティックリンクのスタート地点指定
-			//endNum = 40254;//通勤セマンティックリンクのエンド地点指定
+			startNum = 867754;//通勤セマンティックリンクのスタート地点指定
+			endNum = 40254;//通勤セマンティックリンクのエンド地点指定
 
 			#endregion
 
@@ -185,8 +185,8 @@ namespace SegmentInserter
 
 
 
-			//outward用DB
-			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2,id3,id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25,id26);
+			//outward・homeward用DB
+			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2,id3,id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25,id26);
 			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3);
 
 
@@ -194,7 +194,7 @@ namespace SegmentInserter
 			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8);
 
 			//homeward保土ヶ谷BP
-			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10);
+			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10);
 
 
 
@@ -582,7 +582,7 @@ namespace SegmentInserter
 			List<VirtualCarPositionData> result = new List<VirtualCarPositionData>();
 			VirtualCarPositionData virtualCarPositionData;
 			//double v3 = Convert.ToInt32(textBox4.Text);
-			double v3 = 50;
+			double v3 = 73.43392311;
 			double v = 0;
 			v = v3 * 1000 / 3600;
 			double past = 0;

@@ -739,7 +739,7 @@ namespace SegmentInserter
 			List<VirtualCarPositionData> result = new List<VirtualCarPositionData>();
 			VirtualCarPositionData virtualCarPositionData;
 			//double v3 = Convert.ToInt32(textBox4.Text);
-			double v3 = 50;
+			double v3 = 51.8895604713216;
 			double v = 0;
 			v = v3 * 1000 / 3600;
 			double past = 0;

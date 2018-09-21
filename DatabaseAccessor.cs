@@ -59,8 +59,9 @@ namespace SegmentInserter
             return dt;
         }
 
-        public static DataTable LinkTableGetter2(string id1, string id2,string id3, string id4, string id5, string id6, string id7, string id8, string id9, string id10/*, string id11, string id12, string id13, string id14, string id15, string id16, string id17, string id18, string id19, string id20, string id21, string id22, string id23, string id24, string id25, string id26*/)
-        {
+        public static DataTable LinkTableGetter2(string id1, string id2, string id3, string id4, string id5, string id6, string id7, string id8, string id9, string id10, string id11, string id12, string id13, string id14, string id15, string id16, string id17, string id18, string id19, string id20, string id21, string id22, string id23, string id24, string id25, string id26, string id27, string id28, string id29, string id30, string id31, string id32, string id33, string id34, string id35, string id36, string id37, string id38, string id39, string id40, string id41, string id42, string id43, string id44, string id45, string id46, string id47, string id48, string id49, string id50, string id51, string id52, string id53, string id54, string id55, string id56, string id57, string id58, string id59, string id60, string id61, string id62, string id63, string id64, string id65, string id66, string id67, string id68, string id69, string id70, string id71, string id72, string id73, string id74, string id75, string id76, string id77, string id78, string id79, string id80, string id81, string id82, string id83, string id84)
+
+		{
 
              string cn = @"Data Source=ECOLOGDB2016;Initial Catalog=ECOLOGDBver3;Integrated Security=True";//接続DB
 
@@ -71,6 +72,9 @@ namespace SegmentInserter
 
 			//string query = "WITH Corres AS (select l1.NUM,MIN(ABS(l2.NUM - l1.NUM)) as diff from LINKS as l1,LINKS as l2,SEMANTIC_LINKS";
 			//query += " where l1.NUM != l2.NUM and l1.LINK_ID = l2.LINK_ID and l1.LINK_ID = SEMANTIC_LINKS.LINK_ID and SEMANTIC_LINK_ID in (" + id + ")";
+			//query += " group by l1.NUM) select l1.LINK_ID as LINK_ID ,l1.NUM as START_NUM,l2.NUM as END_NUM,  l1.LATITUDE as START_LAT, l1.LONGITUDE as START_LONG,";
+			//query += " l2.LATITUDE as END_LAT, l2.LONGITUDE as END_LONG ,[dbo].[Hubeny](l1.LATITUDE,l1.LONGITUDE,l2.LATITUDE,l2.LONGITUDE) as DISTANCE";
+			//query += " from LINKS as l1,LINKS as l2,Corres where l1.NUM = Corres.NUM and l1.LINK_ID = l2.LINK_ID and ABS(l2.NUM-l1.NUM) =  Corres.diff";
 			//query += " group by l1.NUM) select l1.LINK_ID as LINK_ID , l1.NUM, l1.LATITUDE as START_LAT, l1.LONGITUDE as START_LONG,";
 			//query += " l2.LATITUDE as END_LAT, l2.LONGITUDE as END_LONG ,[dbo].[Hubeny](l1.LATITUDE,l1.LONGITUDE,l2.LATITUDE,l2.LONGITUDE) as DISTANCE";
 			//query += " from LINKS as l1,LINKS as l2,Corres where l1.NUM = Corres.NUM and l1.LINK_ID = l2.LINK_ID and ABS(l2.NUM-l1.NUM) =  Corres.diff";
@@ -82,8 +86,15 @@ namespace SegmentInserter
 			//query += " l2.LATITUDE as END_LAT, l2.LONGITUDE as END_LONG ,[dbo].[Hubeny](l1.LATITUDE,l1.LONGITUDE,l2.LATITUDE,l2.LONGITUDE) as DISTANCE";
 			//query += " from LINKS as l1,LINKS as l2,Corres where l1.NUM = Corres.NUM and l1.LINK_ID = l2.LINK_ID and ABS(l2.NUM-l1.NUM) =  Corres.diff";
 
+			//string query = "WITH Corres AS (select l1.NUM,MIN(ABS(l2.NUM - l1.NUM)) as diff from LINKS as l1,LINKS as l2,SEMANTIC_LINKS";
+			//query += " where l1.NUM != l2.NUM and l1.LINK_ID = l2.LINK_ID  and l1.LINK_ID in ('" + id1 + "','" + id2 + "','" + id3 + "','" + id4 + "','" + id5 + "','" + id6 + "','" + id7 + "','" + id8 + "','" + id9 + "','" + id10 + "')";
+			//query += " group by l1.NUM) select l1.LINK_ID as LINK_ID ,l1.NUM as START_NUM,l2.NUM as END_NUM,  l1.LATITUDE as START_LAT, l1.LONGITUDE as START_LONG,";
+			//query += " l2.LATITUDE as END_LAT, l2.LONGITUDE as END_LONG ,[dbo].[Hubeny](l1.LATITUDE,l1.LONGITUDE,l2.LATITUDE,l2.LONGITUDE) as DISTANCE";
+			//query += " from LINKS as l1,LINKS as l2,Corres where l1.NUM = Corres.NUM and l1.LINK_ID = l2.LINK_ID and ABS(l2.NUM-l1.NUM) =  Corres.diff";
+
+
 			string query = "WITH Corres AS (select l1.NUM,MIN(ABS(l2.NUM - l1.NUM)) as diff from LINKS as l1,LINKS as l2,SEMANTIC_LINKS";
-			query += " where l1.NUM != l2.NUM and l1.LINK_ID = l2.LINK_ID  and l1.LINK_ID in ('" + id1 + "','" + id2 + "','" + id3 + "','" + id4 + "','" + id5 + "','" + id6 + "','" + id7 + "','" + id8 + "','" + id9 + "','" + id10 + "')";
+			query += " where l1.NUM != l2.NUM and l1.LINK_ID = l2.LINK_ID  and l1.LINK_ID in ('" + id1 + "','" + id2 + "','" + id3 + "','" + id4 + "','" + id5 + "','" + id6 + "','" + id7 + "','" + id8 + "','" + id9 + "','" + id10 + "','" + id11 + "','" + id12 + "','" + id13 + "','" + id14 + "','" + id15 + "','" + id16 + "','" + id17 + "','" + id18 + "','" + id19 + "','" + id20 + "','" + id21 + "','" + id22 + "','" + id23 + "','" + id24 + "','" + id25 + "','" + id26 + "','" + id27 + "','" + id28 + "','" + id29 + "','" + id30 + "','" + id31 + "','" + id32 + "','" + id33 + "','" + id34 + "','" + id35 + "','" + id36 + "','" + id37 + "','" + id38 + "','" + id39 + "','" + id40 + "','" + id41 + "','" + id42 + "','" + id43 + "','" + id44 + "','" + id45 + "','" + id46 + "','" + id47 + "','" + id48 + "','" + id49 + "','" + id50 + "','" + id51 + "','" + id52 + "','" + id53 + "','" + id54 + "','" + id55 + "','" + id56 + "','" + id57 + "','" + id58 + "','" + id59 + "','" + id60 + "','" + id61 + "','" + id62 + "','" + id63 + "','" + id64 + "','" + id65 + "','" + id66 + "','" + id67 + "','" + id68 + "','" + id69 + "','" + id70 + "','" + id71 + "','" + id72 + "','" + id73 + "','" + id74 + "','" + id75 + "','" + id76 + "','" + id77 + "','" + id78 + "','" + id79 + "','" + id80 + "','" + id81 + "','" + id82 + "','" + id83 + "','" + id84 + "')";
 			query += " group by l1.NUM) select l1.LINK_ID as LINK_ID ,l1.NUM as START_NUM,l2.NUM as END_NUM,  l1.LATITUDE as START_LAT, l1.LONGITUDE as START_LONG,";
 			query += " l2.LATITUDE as END_LAT, l2.LONGITUDE as END_LONG ,[dbo].[Hubeny](l1.LATITUDE,l1.LONGITUDE,l2.LATITUDE,l2.LONGITUDE) as DISTANCE";
 			query += " from LINKS as l1,LINKS as l2,Corres where l1.NUM = Corres.NUM and l1.LINK_ID = l2.LINK_ID and ABS(l2.NUM-l1.NUM) =  Corres.diff";

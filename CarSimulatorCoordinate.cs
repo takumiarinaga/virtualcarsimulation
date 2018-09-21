@@ -29,7 +29,7 @@ namespace SegmentInserter
 			List<RealCarPositionMatchingData> resultrealcarmatching = new List<RealCarPositionMatchingData>();
 			List<VirtualCarPositionData> resultCarPositionData = new List<VirtualCarPositionData>();
 
-
+			int id = 0;
 			string id1 = "0";
 			string id2 = "0";
 			string id3 = "0";
@@ -56,6 +56,66 @@ namespace SegmentInserter
 			string id24 = "0";
 			string id25 = "0";
 			string id26 = "0";
+			string id27 = "0";
+			string id28 = "0";
+			string id29 = "0";
+			string id30 = "0";
+			string id31 = "0";
+			string id32 = "0";
+			string id33 = "0";
+			string id34 = "0";
+			string id35 = "0";
+			string id36 = "0";
+			string id37 = "0";
+			string id38 = "0";
+			string id39 = "0";
+			string id40 = "0";
+			string id41 = "0";
+			string id42 = "0";
+			string id43 = "0";
+			string id44 = "0";
+			string id45 = "0";
+			string id46 = "0";
+			string id47 = "0";
+			string id48 = "0";
+			string id49 = "0";
+			string id50 = "0";
+			string id51 = "0";
+			string id52 = "0";
+			string id53 = "0";
+			string id54 = "0";
+			string id55 = "0";
+			string id56 = "0";
+			string id57 = "0";
+			string id58 = "0";
+			string id59 = "0";
+			string id60 = "0";
+			string id61 = "0";
+			string id62 = "0";
+			string id63 = "0";
+			string id64 = "0";
+			string id65 = "0";
+			string id66 = "0";
+			string id67 = "0";
+			string id68 = "0";
+			string id69 = "0";
+			string id70 = "0";
+			string id71 = "0";
+			string id72 = "0";
+			string id73 = "0";
+			string id74 = "0";
+			string id75 = "0";
+			string id76 = "0";
+			string id77 = "0";
+			string id78 = "0";
+			string id79 = "0";
+			string id80 = "0";
+			string id81 = "0";
+			string id82 = "0";
+			string id83 = "0";
+			string id84 = "0";
+
+
 			//通勤ルートのセマンティックリンクID
 			//int tripid = 0;
 			//int NumofCar = 0;//シミュレーションで生成する車の数
@@ -134,16 +194,104 @@ namespace SegmentInserter
 			//id8 = "RB140900683097";
 
 			//homeward保土ヶ谷BP
-			id1 = "RB140900749001";
-			id2 = "RB140900735341";
-			id3 = "RB140900735342";
-			id4 = "RB140900520255";
-			id5 = "RB140900520239";
-			id6 = "RB140900520073";
-			id7 = "RB140900517833";
-			id8 = "RB140900517636";
-			id9 = "RB140900517624";
-			id10 = "RB140900510309";
+			//id1 = "RB140900749001";
+			//id2 = "RB140900735341";
+			//id3 = "RB140900735342";
+			//id4 = "RB140900520255";
+			//id5 = "RB140900520239";
+			//id6 = "RB140900520073";
+			//id7 = "RB140900517833";
+			//id8 = "RB140900517636";
+			//id9 = "RB140900517624";
+			//id10 = "RB140900510309";
+
+
+			//オロロンライン
+			id1 = "RB910000000101";
+			id2 = "RB910000000102";
+			id3 = "RB910000000103";
+			id4 = "RB910000000104";
+			id5 = "RB910000000105";
+			id6 = "RB910000000106";
+			id7 = "RB910000000107";
+			id8 = "RB910000000108";
+			id9 = "RB910000000109";
+			id10 = "RB910000000110";
+			id11 = "RB910000000111";
+			id12 = "RB910000000112";
+			id13 = "RB910000000113";
+			id14 = "RB910000000114";
+			id15 = "RB910000000115";
+			id16 = "RB910000000116";
+			id17 = "RB910000000117";
+			id18 = "RB910000000118";
+			id19 = "RB910000000119";
+			id20 = "RB910000000120";
+			id21 = "RB910000000121";
+			id22 = "RB910000000122";
+			id23 = "RB910000000123";
+			id24 = "RB910000000124";
+			id25 = "RB910000000125";
+			id26 = "RB910000000126";
+			id27 = "RB910000000127";
+			id28 = "RB910000000128";
+			id29 = "RB910000000129";
+			id30 = "RB910000000130";
+			id31 = "RB910000000131";
+			id32 = "RB910000000132";
+			id33 = "RB910000000133";
+			id34 = "RB910000000134";
+			id35 = "RB910000000135";
+			id36 = "RB910000000136";
+			id37 = "RB910000000137";
+			id38 = "RB910000000138";
+			id39 = "RB910000000139";
+			id40 = "RB910000000140";
+			id41 = "RB910000000141";
+			id42 = "RB910000000142";
+			id43 = "RB910000000143";
+			id44 = "RB910000000144";
+			id45 = "RB910000000145";
+			id46 = "RB910000000146";
+			id47 = "RB910000000147";
+			id48 = "RB910000000148";
+			id49 = "RB910000000149";
+			id50 = "RB910000000150";
+			id51 = "RB910000000151";
+			id52 = "RB910000000152";
+			id53 = "RB910000000153";
+			id54 = "RB910000000154";
+			id55 = "RB910000000155";
+			id56 = "RB910000000156";
+			id57 = "RB910000000157";
+			id58 = "RB910000000158";
+			id59 = "RB910000000159";
+			id60 = "RB910000000160";
+			id61 = "RB910000000161";
+			id62 = "RB910000000162";
+			id63 = "RB910000000163";
+			id64 = "RB910000000164";
+			id65 = "RB910000000165";
+			id66 = "RB910000000166";
+			id67 = "RB910000000167";
+			id68 = "RB910000000168";
+			id69 = "RB910000000169";
+			id70 = "RB910000000170";
+			id71 = "RB910000000171";
+			id72 = "RB910000000172";
+			id73 = "RB910000000173";
+			id74 = "RB910000000174";
+			id75 = "RB910000000175";
+			id76 = "RB910000000176";
+			id77 = "RB910000000177";
+			id78 = "RB910000000178";
+			id79 = "RB910000000179";
+			id80 = "RB910000000180";
+			id81 = "RB910000000181";
+			id82 = "RB910000000182";
+			id83 = "RB910000000183";
+			id84 = "RB910000000184";
+
 
 
 
@@ -174,8 +322,13 @@ namespace SegmentInserter
 
 
 			////homeward保土ヶ谷BPのみ
-			startNum = 867754;//通勤セマンティックリンクのスタート地点指定
-			endNum = 40254;//通勤セマンティックリンクのエンド地点指定
+			//startNum = 867754;//通勤セマンティックリンクのスタート地点指定
+			//endNum = 40254;//通勤セマンティックリンクのエンド地点指定
+
+
+			//オロロンライン
+			startNum = 1952067;
+			endNum = 1952633;
 
 			#endregion
 
@@ -194,7 +347,11 @@ namespace SegmentInserter
 			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8);
 
 			//homeward保土ヶ谷BP
-			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10);
+			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10);
+
+			
+			//オロロンライン
+			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2,id3,id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25,id26,id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84);
 
 
 
@@ -582,7 +739,7 @@ namespace SegmentInserter
 			List<VirtualCarPositionData> result = new List<VirtualCarPositionData>();
 			VirtualCarPositionData virtualCarPositionData;
 			//double v3 = Convert.ToInt32(textBox4.Text);
-			double v3 = 73.43392311;
+			double v3 = 50;
 			double v = 0;
 			v = v3 * 1000 / 3600;
 			double past = 0;

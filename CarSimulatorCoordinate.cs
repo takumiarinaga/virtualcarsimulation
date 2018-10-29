@@ -114,6 +114,8 @@ namespace SegmentInserter
 			string id82 = "0";
 			string id83 = "0";
 			string id84 = "0";
+			string id85 = "0";
+			string id86 = "0";
 
 
 			//通勤ルートのセマンティックリンクID
@@ -156,32 +158,32 @@ namespace SegmentInserter
 
 
 			//homeward全部
-			//id1 = "RB140900557239";
-			//id2 = "RB140900557235";
-			//id3 = "RB140900562037";
-			//id4 = "RB140900562028";
-			//id5 = "RB140900673069";
-			//id6 = "RB140900683095";
-			//id7 = "RB140900683094";
-			//id8 = "RB140900683097";
-			//id9 = "RB140900683749";
-			//id10 = "RB140900683080";
-			//id11 = "RB140900683081";
-			//id12 = "RB140900683191";
-			//id13 = "RB140900673048";
-			//id14 = "RB140900748991";
-			//id15 = "RB140900748992";
-			//id16 = "RB140900748997";
-			//id17 = "RB140900749001";
-			//id18 = "RB140900735341";
-			//id19 = "RB140900735342";
-			//id20 = "RB140900520255";
-			//id21 = "RB140900520239";
-			//id22 = "RB140900520073";
-			//id23 = "RB140900517833";
-			//id24 = "RB140900517636";
-			//id25 = "RB140900517624";
-			//id26 = "RB140900510309";
+			id1 = "RB140900557239";
+			id2 = "RB140900557235";
+			id3 = "RB140900562037";
+			id4 = "RB140900562028";
+			id5 = "RB140900673069";
+			id6 = "RB140900683095";
+			id7 = "RB140900683094";
+			id8 = "RB140900683097";
+			id9 = "RB140900683749";
+			id10 = "RB140900683080";
+			id11 = "RB140900683081";
+			id12 = "RB140900683191";
+			id13 = "RB140900673048";
+			id14 = "RB140900748991";
+			id15 = "RB140900748992";
+			id16 = "RB140900748997";
+			id17 = "RB140900749001";
+			id18 = "RB140900735341";
+			id19 = "RB140900735342";
+			id20 = "RB140900520255";
+			id21 = "RB140900520239";
+			id22 = "RB140900520073";
+			id23 = "RB140900517833";
+			id24 = "RB140900517636";
+			id25 = "RB140900517624";
+			id26 = "RB140900510309";
 
 			//homeward横浜新道
 			//id1 = "RB140900557239";
@@ -207,90 +209,153 @@ namespace SegmentInserter
 
 
 			//オロロンライン
-			id1 = "RB910000000101";
-			id2 = "RB910000000102";
-			id3 = "RB910000000103";
-			id4 = "RB910000000104";
-			id5 = "RB910000000105";
-			id6 = "RB910000000106";
-			id7 = "RB910000000107";
-			id8 = "RB910000000108";
-			id9 = "RB910000000109";
-			id10 = "RB910000000110";
-			id11 = "RB910000000111";
-			id12 = "RB910000000112";
-			id13 = "RB910000000113";
-			id14 = "RB910000000114";
-			id15 = "RB910000000115";
-			id16 = "RB910000000116";
-			id17 = "RB910000000117";
-			id18 = "RB910000000118";
-			id19 = "RB910000000119";
-			id20 = "RB910000000120";
-			id21 = "RB910000000121";
-			id22 = "RB910000000122";
-			id23 = "RB910000000123";
-			id24 = "RB910000000124";
-			id25 = "RB910000000125";
-			id26 = "RB910000000126";
-			id27 = "RB910000000127";
-			id28 = "RB910000000128";
-			id29 = "RB910000000129";
-			id30 = "RB910000000130";
-			id31 = "RB910000000131";
-			id32 = "RB910000000132";
-			id33 = "RB910000000133";
-			id34 = "RB910000000134";
-			id35 = "RB910000000135";
-			id36 = "RB910000000136";
-			id37 = "RB910000000137";
-			id38 = "RB910000000138";
-			id39 = "RB910000000139";
-			id40 = "RB910000000140";
-			id41 = "RB910000000141";
-			id42 = "RB910000000142";
-			id43 = "RB910000000143";
-			id44 = "RB910000000144";
-			id45 = "RB910000000145";
-			id46 = "RB910000000146";
-			id47 = "RB910000000147";
-			id48 = "RB910000000148";
-			id49 = "RB910000000149";
-			id50 = "RB910000000150";
-			id51 = "RB910000000151";
-			id52 = "RB910000000152";
-			id53 = "RB910000000153";
-			id54 = "RB910000000154";
-			id55 = "RB910000000155";
-			id56 = "RB910000000156";
-			id57 = "RB910000000157";
-			id58 = "RB910000000158";
-			id59 = "RB910000000159";
-			id60 = "RB910000000160";
-			id61 = "RB910000000161";
-			id62 = "RB910000000162";
-			id63 = "RB910000000163";
-			id64 = "RB910000000164";
-			id65 = "RB910000000165";
-			id66 = "RB910000000166";
-			id67 = "RB910000000167";
-			id68 = "RB910000000168";
-			id69 = "RB910000000169";
-			id70 = "RB910000000170";
-			id71 = "RB910000000171";
-			id72 = "RB910000000172";
-			id73 = "RB910000000173";
-			id74 = "RB910000000174";
-			id75 = "RB910000000175";
-			id76 = "RB910000000176";
-			id77 = "RB910000000177";
-			id78 = "RB910000000178";
-			id79 = "RB910000000179";
-			id80 = "RB910000000180";
-			id81 = "RB910000000181";
-			id82 = "RB910000000182";
-			id83 = "RB910000000183";
-			id84 = "RB910000000184";
+			//id1 = "RB910000000101";
+			//id2 = "RB910000000102";
+			//id3 = "RB910000000103";
+			//id4 = "RB910000000104";
+			//id5 = "RB910000000105";
+			//id6 = "RB910000000106";
+			//id7 = "RB910000000107";
+			//id8 = "RB910000000108";
+			//id9 = "RB910000000109";
+			//id10 = "RB910000000110";
+			//id11 = "RB910000000111";
+			//id12 = "RB910000000112";
+			//id13 = "RB910000000113";
+			//id14 = "RB910000000114";
+			//id15 = "RB910000000115";
+			//id16 = "RB910000000116";
+			//id17 = "RB910000000117";
+			//id18 = "RB910000000118";
+			//id19 = "RB910000000119";
+			//id20 = "RB910000000120";
+			//id21 = "RB910000000121";
+			//id22 = "RB910000000122";
+			//id23 = "RB910000000123";
+			//id24 = "RB910000000124";
+			//id25 = "RB910000000125";
+			//id26 = "RB910000000126";
+			//id27 = "RB910000000127";
+			//id28 = "RB910000000128";
+			//id29 = "RB910000000129";
+			//id30 = "RB910000000130";
+			//id31 = "RB910000000131";
+			//id32 = "RB910000000132";
+			//id33 = "RB910000000133";
+			//id34 = "RB910000000134";
+			//id35 = "RB910000000135";
+			//id36 = "RB910000000136";
+			//id37 = "RB910000000137";
+			//id38 = "RB910000000138";
+			//id39 = "RB910000000139";
+			//id40 = "RB910000000140";
+			//id41 = "RB910000000141";
+			//id42 = "RB910000000142";
+			//id43 = "RB910000000143";
+			//id44 = "RB910000000144";
+			//id45 = "RB910000000145";
+			//id46 = "RB910000000146";
+			//id47 = "RB910000000147";
+			//id48 = "RB910000000148";
+			//id49 = "RB910000000149";
+			//id50 = "RB910000000150";
+			//id51 = "RB910000000151";
+			//id52 = "RB910000000152";
+			//id53 = "RB910000000153";
+			//id54 = "RB910000000154";
+			//id55 = "RB910000000155";
+			//id56 = "RB910000000156";
+			//id57 = "RB910000000157";
+			//id58 = "RB910000000158";
+			//id59 = "RB910000000159";
+			//id60 = "RB910000000160";
+			//id61 = "RB910000000161";
+			//id62 = "RB910000000162";
+			//id63 = "RB910000000163";
+			//id64 = "RB910000000164";
+			//id65 = "RB910000000165";
+			//id66 = "RB910000000166";
+			//id67 = "RB910000000167";
+			//id68 = "RB910000000168";
+			//id69 = "RB910000000169";
+			//id70 = "RB910000000170";
+			//id71 = "RB910000000171";
+			//id72 = "RB910000000172";
+			//id73 = "RB910000000173";
+			//id74 = "RB910000000174";
+			//id75 = "RB910000000175";
+			//id76 = "RB910000000176";
+			//id77 = "RB910000000177";
+			//id78 = "RB910000000178";
+			//id79 = "RB910000000179";
+			//id80 = "RB910000000180";
+			//id81 = "RB910000000181";
+			//id82 = "RB910000000182";
+			//id83 = "RB910000000183";
+			//id84 = "RB910000000184";
+
+
+
+			id27 = "RB140900510372";
+			id28 = "RB140900510292";
+			id29 = "RB140900509897";
+			id30 = "RB140900520263";
+			id31 = "RB140900520262";
+			id32 = "RB140900509725";
+			id33 = "RB140900520420";
+			id34 = "RB140900500468";
+			id35 = "RB140900500470";
+			id36 = "RB140900503889";
+			id37 = "RB140900503557";
+			id38 = "RB140900503518";
+			id39 = "RB140900503477";
+			id40 = "RB140900503484";
+			id41 = "RB140900520289";
+			id42 = "RB140900501157";
+			id43 = "RB140900501153";
+			id44 = "RB140900501148";
+			id45 = "RB140900501134";
+			id46 = "RB140900501190";
+			id47 = "RB140900501166";
+			id48 = "RB140900501234";
+			id49 = "RB140900501197";
+			id50 = "RB140900501097";
+			id51 = "RB140900501096";
+			id52 = "RB140900501075";
+			id53 = "RB140900501066";
+			id54 = "RB140900501195";
+			id55 = "RB140900501161";
+			id56 = "RB140900501114";
+			id57 = "RB140900501255";
+			id58 = "RB9900900501256";
+			id59 = "RB140900503933";
+			id60 = "RB140900503413";
+			id61 = "RB140900503414";
+			id62 = "RB140900507514";
+			id63 = "RB140900507354";
+			id64 = "RB140900500334";
+			id65 = "RB140900761070";
+			id66 = "RB140900761157";
+			id67 = "RB140900761992";
+			id68 = "RB140900761995";
+			id69 = "RB140900929341";
+			id70 = "RB140900904710";
+			id71 = "RB140900904538";
+			id72 = "RB140900904707";
+			id73 = "RB140900904533";
+			id74 = "RB140900904706";
+			id75 = "RB140900904530";
+			id76 = "RB140900906694";
+			id77 = "RB140900906640";
+			id78 = "RB140900906641";
+			id79 = "RB140900906642";
+			id80 = "RB140900803989";
+			id81 = "RB140900803735";
+			id82 = "RB140900803990";
+			id83 = "RB140900803736";
+			id84 = "RB140900803991";
+			id85 = "RB140900803738";
+			id86 = "RB140900803997";
 
 
 
@@ -327,8 +392,12 @@ namespace SegmentInserter
 
 
 			//オロロンライン
-			startNum = 1952067;
-			endNum = 1952633;
+			//startNum = 1952067;
+			//endNum = 1952633;
+
+			//東名
+			startNum = 196228;
+			endNum = 1113347;
 
 			#endregion
 
@@ -349,10 +418,12 @@ namespace SegmentInserter
 			//homeward保土ヶ谷BP
 			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10);
 
-			
-			//オロロンライン
-			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2,id3,id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25,id26,id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84);
 
+			//オロロンライン
+			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2,id3,id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25,id26,id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84);
+
+			//東名
+			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84, id85, id86);
 
 
 
@@ -360,9 +431,13 @@ namespace SegmentInserter
 			DataRow[] StartLink = LinkTable.Select("START_NUM = " + startNum);//通勤セマンティックリンクのスタート地点のリンク構成点データだけ取り出し
 			List<LinkData> linkList = new List<LinkData>();//リンクデータリスト追加
 
+			Console.WriteLine(1);
+
 			linkList.Add(new LinkData(Convert.ToString(StartLink[0]["LINK_ID"]), Convert.ToInt32(StartLink[0]["START_NUM"]),
 				Convert.ToDouble(StartLink[0]["START_LAT"]), Convert.ToDouble(StartLink[0]["START_LONG"]),
 				Convert.ToDouble(StartLink[0]["END_LAT"]), Convert.ToDouble(StartLink[0]["END_LONG"]), Convert.ToDouble(StartLink[0]["DISTANCE"])));//スタート地点のリンク構成点データをadd
+
+			Console.WriteLine(2);
 
 			#region 通勤リンクデータ結合処理
 			Boolean flag = true;//結合できたか否かを判定するフラグ
@@ -381,7 +456,7 @@ namespace SegmentInserter
 													  Convert.ToDouble(LinkRows[i]["START_LAT"]), Convert.ToDouble(LinkRows[i]["START_LONG"]),
 													  Convert.ToDouble(LinkRows[i]["END_LAT"]), Convert.ToDouble(LinkRows[i]["END_LONG"]), Convert.ToDouble(LinkRows[i]["DISTANCE"])));//該当LinkをLinklistに追加
 						j++;//linkListにデータが追加されたので最後尾をUpdate
-
+						Console.WriteLine(0);
 
 						flag = true;//Link結合されたのでtrueに書き換え
 						StateLabel.Text = Convert.ToString(linkList.Count);
@@ -397,7 +472,7 @@ namespace SegmentInserter
 			}
 			#endregion
 
-
+			Console.WriteLine(3);
 
 			#region ここは多分消していい
 			//DataTable RunTable = DatabaseAccessor.RunTableGetter(id, tripid);      //走行データ取得
@@ -522,7 +597,7 @@ namespace SegmentInserter
 			sw.Close();
 		}
 		#endregion
-
+	
 
 
 		private List<RealCarPositionMatchingData> MatchingCarPosition(List<LinkData> linkList, List<RunData> runList)   //実際の車の位置（今回は必要ない）
@@ -739,7 +814,7 @@ namespace SegmentInserter
 			List<VirtualCarPositionData> result = new List<VirtualCarPositionData>();
 			VirtualCarPositionData virtualCarPositionData;
 			//double v3 = Convert.ToInt32(textBox4.Text);
-			double v3 = 51.8895604713216;
+			double v3 = 75;
 			double v = 0;
 			v = v3 * 1000 / 3600;
 			double past = 0;
@@ -756,7 +831,7 @@ namespace SegmentInserter
 			int num;
 			double restv = 0;
 
-
+			Console.WriteLine(4);
 			//result[0].LATITUDE = linkList[0].START_LAT;
 			//result[0].LONGITUDE = linkList[0].START_LONG;
 			lat1 = linkList[0].START_LAT;

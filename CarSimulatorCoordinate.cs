@@ -29,130 +29,6 @@ namespace SegmentInserter
 			List<RealCarPositionMatchingData> resultrealcarmatching = new List<RealCarPositionMatchingData>();
 			List<VirtualCarPositionData> resultCarPositionData = new List<VirtualCarPositionData>();
 
-
-
-
-			string[] ids = {
-
-				"RB140900803023",
-				"RB140900803441",
-				"RB140900803442",
-				"RB140900804746",
-				"RB140900804902",
-				"RB140900804809",
-				"RB140900814530",
-				"RB140900814542",
-				"RB140900814547",
-				"RB140900814619",
-				"RB140900814625",
-				"RB140900814624",
-				"RB140900816398",
-				"RB140900816399",
-				"RB140900834371",
-				"RB140900834380",
-				"RB140900834385",
-				"RB140900834427",
-				"RB140900834431",
-				"RB140900834434",
-				"RB140900834435",
-			    "RB140900835995",
-				"RB140900835993",
-				"RB140900836011",
-				"RB140900835994",
-				"RB140900836004",
-				"RB140900836261",
-				"RB140900836119",
-				"RB140900833179",
-				"RB140900832924",
-				"RB140900832988",
-				   "RB140900853266",
-				   "RB140900853270",
-				   "RB140900853272",
-				   "RB140900853271",
-				   "RB140900874935",
-				   "RB140900874899",
-				   "RB140900874369",
-				   "RB140900874316",
-				   "RB140900874321",
-				   "RB140900874320",
-				   "RB140900874318",
-				   "RB140900874314",
-				   "RB140900874368",
-				   "RB140900874331",
-				   "RB140900874333",
-				   "RB140900874332",
-				   "RB140900874367",
-				   "RB140900874323",
-				   "RB140900872092",
-				   "RB140900873729",
-				   "RB140900873792",
-				   "RB140900873728",
-				   "RB140900873791",
-				   "RB140900873727",
-				   "RB140900873790",
-				   "RB140900873726",
-				   "RB140900873789",
-				   "RB140900873725",
-				   "RB140900872826",
-				   "RB140900872736",
-				   "RB140900872827",
-				   "RB140900872775",
-				   "RB140900872829",
-				   "RB140900872778",
-				   "RB140900872831",
-				   "RB140900872737",
-				   "RB140900888394",
-				   "RB140900888021",
-				   "RB140900888061",
-				   "RB140900888426",
-				   "RB140900887829",
-				   "RB140900887818",
-				   "RB140900887817",
-				   "RB140900887717",
-				   "RB140900884725",
-				   "RB140900884783",
-				   "RB140900886643",
-				   "RB140900886642",
-				   "RB140900886579",
-				   "RB140900886578",
-				   "RB140900886577",
-				   "RB140900886582",
-				   "RB140900886583",
-				   "RB140900886584",
-				   "RB140900886585",
-			"RB140900886586",
-			"RB140900886620",
-			"RB140900886621",
-			"RB140900886622",
-			"RB140900886623",
-			"RB140900886624",
-			"RB140900886625",
-			"RB140900886613",
-			"RB140900886614",
-			"RB140900886612",
-			"RB140900886611",
-			"RB140900886604",
-			"RB140900886605",
-			"RB140900886199",
-			"RB140900886217",
-			"RB140900886231",
-			"RB140900894443",
-			"RB140900895655",
-			"RB140900895656",
-			"RB140900894333",
-			"RB140900894334",
-			"RB140900894327",
-			"RB140900894147",
-			"RB140900894095",
-			"RB140900894298",
-			"RB140900896223",
-			"RB140900896305",
-			"RB140900896303",
-			"RB140900895900",
-			"RB140900896337"
-
-			};
-			#region
 			//int id = 0;
 			string id1 = "0";
 			string id2 = "0";
@@ -270,8 +146,8 @@ namespace SegmentInserter
 			string id114 = "0";
 			string id115 = "0";
 			string id116 = "0";
-			#endregion
-			#region
+
+
 			//通勤ルートのセマンティックリンクID
 			//int tripid = 0;
 			//int NumofCar = 0;//シミュレーションで生成する車の数
@@ -535,126 +411,126 @@ namespace SegmentInserter
 
 
 			//小田厚木
-			//id1 = "RB140900803023";
-			//id2 = "RB140900803441";
-			//id3 = "RB140900803442";
-			//id4 = "RB140900804746";
-			//id5 = "RB140900804902";
-			//id6 = "RB140900804809";
-			//id7 = "RB140900814530";
-			//id8 = "RB140900814542";
-			//id9 = "RB140900814547";
-			//id10 = "RB140900814619";
-			//id11 = "RB140900814625";
-			//id12 = "RB140900814624";
-			//id13 = "RB140900816398";
-			//id14 = "RB140900816399";
-			//id15 = "RB140900834371";
-			//id16 = "RB140900834380";
-			//id17 = "RB140900834385";
-			//id18 = "RB140900834427";
-			//id19 = "RB140900834431";
-			//id20 = "RB140900834434";
-			//id21 = "RB140900834435";
-			//id22 = "RB140900835995";
-			//id23 = "RB140900835993";
-			//id24 = "RB140900836011";
-			//id25 = "RB140900835994";
-			//id26 = "RB140900836004";
-			//id27 = "RB140900836261";
-			//id28 = "RB140900836119";
-			//id29 = "RB140900833179";
-			//id30 = "RB140900832924";
-			//id31 = "RB140900832988";
-			//id32 = "RB140900853266";
-			//id33 = "RB140900853270";
-			//id34 = "RB140900853272";
-			//id35 = "RB140900853271";
-			//id36 = "RB140900874935";
-			//id37 = "RB140900874899";
-			//id38 = "RB140900874369";
-			//id39 = "RB140900874316";
-			//id40 = "RB140900874321";
-			//id41 = "RB140900874320";
-			//id42 = "RB140900874318";
-			//id43 = "RB140900874314";
-			//id44 = "RB140900874368";
-			//id45 = "RB140900874331";
-			//id46 = "RB140900874333";
-			//id47 = "RB140900874332";
-			//id48 = "RB140900874367";
-			//id49 = "RB140900874323";
-			//id50 = "RB140900872092";
-			//id51 = "RB140900873729";
-			//id52 = "RB140900873792";
-			//id53 = "RB140900873728";
-			//id54 = "RB140900873791";
-			//id55 = "RB140900873727";
-			//id56 = "RB140900873790";
-			//id57 = "RB140900873726";
-			//id58 = "RB140900873789";
-			//id59 = "RB140900873725";
-			//id60 = "RB140900872826";
-			//id61 = "RB140900872736";
-			//id62 = "RB140900872827";
-			//id63 = "RB140900872775";
-			//id64 = "RB140900872829";
-			//id65 = "RB140900872778";
-			//id66 = "RB140900872831";
-			//id67 = "RB140900872737";
-			//id68 = "RB140900888394";
-			//id69 = "RB140900888021";
-			//id70 = "RB140900888061";
-			//id71 = "RB140900888426";
-			//id72 = "RB140900887829";
-			//id73 = "RB140900887818";
-			//id74 = "RB140900887817";
-			//id75 = "RB140900887717";
-			//id76 = "RB140900884725";
-			//id77 = "RB140900884783";
-			//id78 = "RB140900886643";
-			//id79 = "RB140900886642";
-			//id80 = "RB140900886579";
-			//id81 = "RB140900886578";
-			//id82 = "RB140900886577";
-			//id83 = "RB140900886582";
-			//id84 = "RB140900886583";
-			//id85 = "RB140900886584";
-			//id86 = "RB140900886585";
-			//id87 = "RB140900886586";
-			//id88 = "RB140900886620";
-			//id89 = "RB140900886621";
-			//id90 = "RB140900886622";
-			//id91 = "RB140900886623";
-			//id92 = "RB140900886624";
-			//id93 = "RB140900886625";
-			//id94 = "RB140900886613";
-			//id95 = "RB140900886614";
-			//id96 = "RB140900886612";
-			//id97 = "RB140900886611";
-			//id98 = "RB140900886604";
-			//id99 = "RB140900886605";
-			//id100= "RB140900886199";
-			//id101 = "RB140900886217";
-			//id102 = "RB140900886231";
-			//id103 = "RB140900894443";
-			//id104 = "RB140900895655";
-			//id105 = "RB140900895656";
-			//id106 = "RB140900894333";
-			//id107 = "RB140900894334";
-			//id108 = "RB140900894327";
-			//id109 = "RB140900894147";
-			//id110 = "RB140900894095";
-			//id111 = "RB140900894298";
-			//id112 = "RB140900896223";
-			//id113 = "RB140900896305";
-			//id114 = "RB140900896303";
-			//id115 = "RB140900895900";
-			//id116 = "RB140900896337";
+			id1 = "RB140900803023";
+			id2 = "RB140900803441";
+			id3 = "RB140900803442";
+			id4 = "RB140900804746";
+			id5 = "RB140900804902";
+			id6 = "RB140900804809";
+			id7 = "RB140900814530";
+			id8 = "RB140900814542";
+			id9 = "RB140900814547";
+			id10 = "RB140900814619";
+			id11 = "RB140900814625";
+			id12 = "RB140900814624";
+			id13 = "RB140900816398";
+			id14 = "RB140900816399";
+			id15 = "RB140900834371";
+			id16 = "RB140900834380";
+			id17 = "RB140900834385";
+			id18 = "RB140900834427";
+			id19 = "RB140900834431";
+			id20 = "RB140900834434";
+			id21 = "RB140900834435";
+			id22 = "RB140900835995";
+			id23 = "RB140900835993";
+			id24 = "RB140900836011";
+			id25 = "RB140900835994";
+			id26 = "RB140900836004";
+			id27 = "RB140900836261";
+			id28 = "RB140900836119";
+			id29 = "RB140900833179";
+			id30 = "RB140900832924";
+			id31 = "RB140900832988";
+			id32 = "RB140900853266";
+			id33 = "RB140900853270";
+			id34 = "RB140900853272";
+			id35 = "RB140900853271";
+			id36 = "RB140900874935";
+			id37 = "RB140900874899";
+			id38 = "RB140900874369";
+			id39 = "RB140900874316";
+			id40 = "RB140900874321";
+			id41 = "RB140900874320";
+			id42 = "RB140900874318";
+			id43 = "RB140900874314";
+			id44 = "RB140900874368";
+			id45 = "RB140900874331";
+			id46 = "RB140900874333";
+			id47 = "RB140900874332";
+			id48 = "RB140900874367";
+			id49 = "RB140900874323";
+			id50 = "RB140900872092";
+			id51 = "RB140900873729";
+			id52 = "RB140900873792";
+			id53 = "RB140900873728";
+			id54 = "RB140900873791";
+			id55 = "RB140900873727";
+			id56 = "RB140900873790";
+			id57 = "RB140900873726";
+			id58 = "RB140900873789";
+			id59 = "RB140900873725";
+			id60 = "RB140900872826";
+			id61 = "RB140900872736";
+			id62 = "RB140900872827";
+			id63 = "RB140900872775";
+			id64 = "RB140900872829";
+			id65 = "RB140900872778";
+			id66 = "RB140900872831";
+			id67 = "RB140900872737";
+			id68 = "RB140900888394";
+			id69 = "RB140900888021";
+			id70 = "RB140900888061";
+			id71 = "RB140900888426";
+			id72 = "RB140900887829";
+			id73 = "RB140900887818";
+			id74 = "RB140900887817";
+			id75 = "RB140900887717";
+			id76 = "RB140900884725";
+			id77 = "RB140900884783";
+			id78 = "RB140900886643";
+			id79 = "RB140900886642";
+			id80 = "RB140900886579";
+			id81 = "RB140900886578";
+			id82 = "RB140900886577";
+			id83 = "RB140900886582";
+			id84 = "RB140900886583";
+			id85 = "RB140900886584";
+			id86 = "RB140900886585";
+			id87 = "RB140900886586";
+			id88 = "RB140900886620";
+			id89 = "RB140900886621";
+			id90 = "RB140900886622";
+			id91 = "RB140900886623";
+			id92 = "RB140900886624";
+			id93 = "RB140900886625";
+			id94 = "RB140900886613";
+			id95 = "RB140900886614";
+			id96 = "RB140900886612";
+			id97 = "RB140900886611";
+			id98 = "RB140900886604";
+			id99 = "RB140900886605";
+			id100= "RB140900886199";
+			id101 = "RB140900886217";
+			id102 = "RB140900886231";
+			id103 = "RB140900894443";
+			id104 = "RB140900895655";
+			id105 = "RB140900895656";
+			id106 = "RB140900894333";
+			id107 = "RB140900894334";
+			id108 = "RB140900894327";
+			id109 = "RB140900894147";
+			id110 = "RB140900894095";
+			id111 = "RB140900894298";
+			id112 = "RB140900896223";
+			id113 = "RB140900896305";
+			id114 = "RB140900896303";
+			id115 = "RB140900895900";
+			id116 = "RB140900896337";
 
 
 
-			#endregion
+
 
 			//tripid = 11;
 			//NumofCar = 100;
@@ -735,61 +611,51 @@ namespace SegmentInserter
 			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29);
 
 			//小田厚木
-			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84, id85, id86, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100, id101, id102, id103, id104, id105, id106, id107, id108, id109, id110, id111, id112, id113, id114, id115,id116);
+			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84, id85, id86, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100, id101, id102, id103, id104, id105, id106, id107, id108, id109, id110, id111, id112, id113, id114, id115,id116);
 
 
-			DataTable LinkTable;
-			List<LinkData> linkList = new List<LinkData>();
+			DataRow[] LinkRows = LinkTable.Select(null, "DISTANCE");//LinkTableをカラムDISTANCEでソートしてDataRow配列に変換
+			DataRow[] StartLink = LinkTable.Select("START_NUM = " + startNum);//通勤セマンティックリンクのスタート地点のリンク構成点データだけ取り出し
+			List<LinkData> linkList = new List<LinkData>();//リンクデータリスト追加
 
-			foreach (var item in ids)
+			Console.WriteLine(1);
+
+			linkList.Add(new LinkData(Convert.ToString(StartLink[0]["LINK_ID"]), Convert.ToInt32(StartLink[0]["START_NUM"]),
+				Convert.ToDouble(StartLink[0]["START_LAT"]), Convert.ToDouble(StartLink[0]["START_LONG"]),
+				Convert.ToDouble(StartLink[0]["END_LAT"]), Convert.ToDouble(StartLink[0]["END_LONG"]), Convert.ToDouble(StartLink[0]["DISTANCE"])));//スタート地点のリンク構成点データをadd
+
+			Console.WriteLine(2);
+
+			#region 通勤リンクデータ結合処理
+			Boolean flag = true;//結合できたか否かを判定するフラグ
+			int j = 0;//linkList配列の最後尾を示すindex
+			while (flag)
 			{
-				LinkTable = DatabaseAccessor.LinkTableGetter2(item);
-				DataRow[] LinkRows = LinkTable.Select(null, "DISTANCE");//LinkTableをカラムDISTANCEでソートしてDataRow配列に変換
-				DataRow[] StartLink = LinkTable.Select("START_NUM = " + startNum);//通勤セマンティックリンクのスタート地点のリンク構成点データだけ取り出し
-				//List<LinkData> linkList = new List<LinkData>();//リンクデータリスト追加
-															   //DataRow[] LinkRows = LinkTable.Select(null, "DISTANCE");//LinkTableをカラムDISTANCEでソートしてDataRow配列に変換
-															   //DataRow[] StartLink = LinkTable.Select("START_NUM = " + startNum);//通勤セマンティックリンクのスタート地点のリンク構成点データだけ取り出し
-															   //List<LinkData> linkList = new List<LinkData>();//リンクデータリスト追加
-
-				Console.WriteLine(1);
-
-				linkList.Add(new LinkData(Convert.ToString(StartLink[0]["LINK_ID"]), Convert.ToInt32(StartLink[0]["START_NUM"]),
-					Convert.ToDouble(StartLink[0]["START_LAT"]), Convert.ToDouble(StartLink[0]["START_LONG"]),
-					Convert.ToDouble(StartLink[0]["END_LAT"]), Convert.ToDouble(StartLink[0]["END_LONG"]), Convert.ToDouble(StartLink[0]["DISTANCE"])));//スタート地点のリンク構成点データをadd
-
-				Console.WriteLine(2);
-
-				#region 通勤リンクデータ結合処理
-				Boolean flag = true;//結合できたか否かを判定するフラグ
-				int j = 0;//linkList配列の最後尾を示すindex
-				while (flag)
+				flag = false;//Link結合がされなければtrueにならずにループ終了
+				for (int i = 0; i < LinkRows.Length; i++)//LinkRowsから結合可能なLinkを探索
 				{
-					flag = false;//Link結合がされなければtrueにならずにループ終了
-					for (int i = 0; i < LinkRows.Length; i++)//LinkRowsから結合可能なLinkを探索
+					if ((Convert.ToDouble(LinkRows[i]["START_LAT"]) == linkList[j].END_LAT && Convert.ToDouble(LinkRows[i]["START_LONG"]) == linkList[j].END_LONG)
+						&& (Convert.ToDouble(LinkRows[i]["END_LAT"]) != linkList[j].START_LAT || Convert.ToDouble(LinkRows[i]["END_LONG"]) != linkList[j].START_LONG))//linklistの最後尾の値に結合可能なlinkのみを追加する
 					{
-						if ((Convert.ToDouble(LinkRows[i]["START_LAT"]) == linkList[j].END_LAT && Convert.ToDouble(LinkRows[i]["START_LONG"]) == linkList[j].END_LONG)
-							&& (Convert.ToDouble(LinkRows[i]["END_LAT"]) != linkList[j].START_LAT || Convert.ToDouble(LinkRows[i]["END_LONG"]) != linkList[j].START_LONG))//linklistの最後尾の値に結合可能なlinkのみを追加する
-						{
 
 
-							linkList.Add(new LinkData(Convert.ToString(LinkRows[i]["LINK_ID"]), Convert.ToInt32(LinkRows[i]["START_NUM"]),
-														  Convert.ToDouble(LinkRows[i]["START_LAT"]), Convert.ToDouble(LinkRows[i]["START_LONG"]),
-														  Convert.ToDouble(LinkRows[i]["END_LAT"]), Convert.ToDouble(LinkRows[i]["END_LONG"]), Convert.ToDouble(LinkRows[i]["DISTANCE"])));//該当LinkをLinklistに追加
-							j++;//linkListにデータが追加されたので最後尾をUpdate
-							Console.WriteLine(0);
+						linkList.Add(new LinkData(Convert.ToString(LinkRows[i]["LINK_ID"]), Convert.ToInt32(LinkRows[i]["START_NUM"]),
+													  Convert.ToDouble(LinkRows[i]["START_LAT"]), Convert.ToDouble(LinkRows[i]["START_LONG"]),
+													  Convert.ToDouble(LinkRows[i]["END_LAT"]), Convert.ToDouble(LinkRows[i]["END_LONG"]), Convert.ToDouble(LinkRows[i]["DISTANCE"])));//該当LinkをLinklistに追加
+						j++;//linkListにデータが追加されたので最後尾をUpdate
+						Console.WriteLine(0);
 
-							flag = true;//Link結合されたのでtrueに書き換え
-							StateLabel.Text = Convert.ToString(linkList.Count);
-							StateLabel.Update();
-							break;//結合が終わったので次のループへ進む
-
-						}
-
-
+						flag = true;//Link結合されたのでtrueに書き換え
+						StateLabel.Text = Convert.ToString(linkList.Count);
+						StateLabel.Update();
+						break;//結合が終わったので次のループへ進む
 
 					}
 
+
+
 				}
+
 			}
 			#endregion
 

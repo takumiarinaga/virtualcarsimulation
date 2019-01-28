@@ -717,7 +717,7 @@ namespace SegmentInserter
 			#endregion
 			#region　横浜新道（新保土ヶ谷～町田IC）
 			
-			
+			/*
 
 					//横浜新道（to 小田原西）
 					id1 = "RB140900683087";
@@ -755,7 +755,7 @@ namespace SegmentInserter
 					id33 = "RB140900739166";
 					id34 = "RB140900739141";
 					id35 = "RB140900739124";
-			
+			*/
 			#endregion
 			#region　東海道
 			/*
@@ -892,8 +892,8 @@ namespace SegmentInserter
 			#endregion
 
 			#region　新湘南バイパス
+			
 			/*
-
 			//新湘南バイパス
 			id1 = "RB140900931474";
 			id2 = "RB140900931473";
@@ -955,7 +955,7 @@ namespace SegmentInserter
 					id36 = "RB140900878303";
 					id37 = "RB140900878304";
 					id38 = "RB140900878305";
-*/
+			*/
 			#endregion
 			#region　西湘バイパス       
 			/*
@@ -1017,7 +1017,7 @@ namespace SegmentInserter
 					*/
 			#endregion
 			#region 東海道＆国道30号線
-			/*
+			
 
 						//東海道国道30号線
 						id1 = "RB140900738705";
@@ -1311,7 +1311,7 @@ namespace SegmentInserter
 						id289 = "RB140900881047";
 						id290 = "RB140900881049";
 
-						*/
+						
 			#endregion
 			//tripid = 11;
 			//NumofCar = 100;
@@ -1374,10 +1374,10 @@ namespace SegmentInserter
 			//startNum = 832295;
 
 			////横浜新道（）
-			startNum = 640350;
+			//startNum = 640350;
 
 			//東海道国道30
-			//startNum = 832295;
+			startNum = 832295;
 
 			#endregion
 
@@ -1418,12 +1418,14 @@ namespace SegmentInserter
 
 			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16);
 
-			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35);
+			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35);
 
-			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2,id3,id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25,id26,id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54);
+			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54);
+
+			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84, id85, id86, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100, id101, id102, id103, id104, id105, id106, id107, id108, id109, id110, id111, id112, id113, id114, id115, id116, id117, id118, id119, id120, id121, id122, id123, id124, id125, id126, id127, id128);
 
 
-			//DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84, id85, id86, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100, id101, id102, id103, id104, id105, id106, id107, id108, id109, id110, id111, id112, id113, id114, id115, id116, id117, id118, id119, id120, id121, id122, id123, id124, id125, id126, id127, id128, id129, id130, id131, id132, id133, id134, id135, id136, id137, id138, id139, id140, id141, id142, id143, id144, id145, id146, id147, id148, id149, id150, id151, id152, id153, id154, id155, id156, id157, id158, id159, id160, id161, id162, id163, id164, id165, id166, id167, id168, id169, id170, id171, id172, id173, id174, id175, id176, id177, id178, id179, id180, id181, id182, id183, id184, id185, id186, id187, id188, id189, id190, id191, id192, id193, id194, id195, id196, id197, id198, id199, id200, id201, id202, id203, id204, id205, id206, id207, id208, id209, id210, id211, id212, id213, id214, id215, id216, id217, id218, id219, id220, id221, id222, id223, id224, id225, id226, id227, id228, id229, id230, id231, id232, id233, id234, id235, id236, id237, id238, id239, id240, id241, id242, id243, id244, id245, id246, id247, id248, id249, id250, id251, id252, id253, id254, id255, id256, id257, id258, id259, id260, id261, id262, id263, id264, id265, id266, id267, id268, id269, id270, id271, id272, id273, id274, id275, id276, id277, id278, id279, id280, id281, id282, id283, id284, id285, id286, id287, id288, id289, id290);
+			DataTable LinkTable = DatabaseAccessor.LinkTableGetter2(id1, id2, id3, id4, id5, id6, id7, id8, id9, id10, id11, id12, id13, id14, id15, id16, id17, id18, id19, id20, id21, id22, id23, id24, id25, id26, id27, id28, id29, id30, id31, id32, id33, id34, id35, id36, id37, id38, id39, id40, id41, id42, id43, id44, id45, id46, id47, id48, id49, id50, id51, id52, id53, id54, id55, id56, id57, id58, id59, id60, id61, id62, id63, id64, id65, id66, id67, id68, id69, id70, id71, id72, id73, id74, id75, id76, id77, id78, id79, id80, id81, id82, id83, id84, id85, id86, id87, id88, id89, id90, id91, id92, id93, id94, id95, id96, id97, id98, id99, id100, id101, id102, id103, id104, id105, id106, id107, id108, id109, id110, id111, id112, id113, id114, id115, id116, id117, id118, id119, id120, id121, id122, id123, id124, id125, id126, id127, id128, id129, id130, id131, id132, id133, id134, id135, id136, id137, id138, id139, id140, id141, id142, id143, id144, id145, id146, id147, id148, id149, id150, id151, id152, id153, id154, id155, id156, id157, id158, id159, id160, id161, id162, id163, id164, id165, id166, id167, id168, id169, id170, id171, id172, id173, id174, id175, id176, id177, id178, id179, id180, id181, id182, id183, id184, id185, id186, id187, id188, id189, id190, id191, id192, id193, id194, id195, id196, id197, id198, id199, id200, id201, id202, id203, id204, id205, id206, id207, id208, id209, id210, id211, id212, id213, id214, id215, id216, id217, id218, id219, id220, id221, id222, id223, id224, id225, id226, id227, id228, id229, id230, id231, id232, id233, id234, id235, id236, id237, id238, id239, id240, id241, id242, id243, id244, id245, id246, id247, id248, id249, id250, id251, id252, id253, id254, id255, id256, id257, id258, id259, id260, id261, id262, id263, id264, id265, id266, id267, id268, id269, id270, id271, id272, id273, id274, id275, id276, id277, id278, id279, id280, id281, id282, id283, id284, id285, id286, id287, id288, id289, id290);
 
 			#endregion
 			#region スタート地点追加
@@ -1558,7 +1560,7 @@ namespace SegmentInserter
 			datacount = virtualCarPositionDataList.Count;
 
 			//DateTime dtBirth = DateTime.Now;
-			DateTime dtBirth = new DateTime(2018,1,26,2,5,0);
+			DateTime dtBirth = new DateTime(2018,2,1,5,0,0);
 
 			System.IO.StreamWriter sw = new System.IO.StreamWriter(
 					//@"C:\Users\arinaga\Desktop\" + dtBirth.ToString("yyyyMMddHHmmss")+"UnsentGPS"+".csv",
@@ -1818,8 +1820,8 @@ namespace SegmentInserter
 
 			double[] speedarray = new double[] {
 
-				70,
-				70
+				50,
+				50
 			};
 			#region JC08走行モード
 			/*
@@ -3934,8 +3936,8 @@ namespace SegmentInserter
 1.2,
 0.0,
 			};
-			
 			*/
+
 			#endregion
 
 
